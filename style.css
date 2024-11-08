@@ -54,3 +54,21 @@ button {
   padding-inline: var(--spacing);
   max-width: var(--max-width);
 }
+
+.keywords {
+  padding: var(--spacing);
+}
+
+.keywords h2 {
+  text-align: center;
+}
+
+.keyword {
+  background-color: var(--color-background-zebra);
+}
+
+footer {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
