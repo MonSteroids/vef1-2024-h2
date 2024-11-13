@@ -55,6 +55,31 @@ button {
   max-width: var(--max-width);
 }
 
+/** Lectures **/
+.lectures h2 {
+  text-align: center;
+}
+
+.lectures {
+  padding: var(--spacing);
+}
+
+.lecture > * {
+  padding: var(--spacing);
+}
+
+.lecture-title {
+  text-align: center;
+}
+
+.content-heading {
+  padding-bottom: 0;
+}
+
+.content-list {
+  list-style: none;
+}
+
 /** Keywords **/
 .keywords {
   padding: var(--spacing);
@@ -62,16 +87,26 @@ button {
 
 .keywords h2 {
   text-align: center;
+  padding: var(--spacing);
 }
 
 .keyword {
   background-color: var(--color-background-zebra);
+  padding: var(--spacing);
+}
+
+.flashcards-explanation {
+  font-weight: 400;
 }
 
 /** Questions **/
 .quiz h2 {
   text-align: center;
   margin: var(--spacing);
+}
+
+.quiz {
+  padding: var(--spacing);
 }
 
 .question-container {
