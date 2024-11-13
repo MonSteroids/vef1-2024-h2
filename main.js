@@ -1,8 +1,8 @@
 import { renderHeader } from './lib/components/header.js';
 import { renderIndexData } from './lib/components/indexData.js';
-import { renderKeywordsData } from './lib/components/keywords.js';
-import { renderQuestionsData} from './lib/components/questions.js';
-import { renderLecturesData } from './lib/components/lectures.js';
+import { renderKeywordsData } from './lib/pages/keywords.js';
+import { renderQuestionsData } from './lib/pages/questions.js';
+import { renderLecturesData } from './lib/pages/lectures.js';
 import { el } from './lib/elements.js';
 import { renderIndexPage } from './lib/pages/index-page.js';
 
