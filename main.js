@@ -2,6 +2,7 @@ import { renderHeader } from './lib/components/header.js';
 import { renderIndexData } from './lib/components/indexData.js';
 import { renderKeywordsData } from './lib/components/keywords.js';
 import { renderQuestionsData} from './lib/components/questions.js';
+import { renderLecturesData } from './lib/components/lectures.js';
 import { el } from './lib/elements.js';
 import { renderIndexPage } from './lib/pages/index-page.js';
 
@@ -34,7 +35,9 @@ async function renderSubpage(root, indexJson, type, content) {
   }
   else if (content === 'lectures') {
     //TODO
-    mainElement = el('main', {}, ...indexElement);
+    const lecturesElement = await renderLecturesData(type);
+    const lecturesSectionElement = el('section', { class: "lectures"}, ...lecturesElement);
+    mainElement = el('main', {}, lecturesSectionElement);
   }
   else if (content === 'questions') {
     //TODO
