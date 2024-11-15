@@ -7,7 +7,7 @@ import { el } from './lib/elements.js';
 import { renderIndexPage } from './lib/pages/index-page.js';
 
 async function fetchIndex() {
-  const file = 'public/data/index.json';
+  const file = '/data/index.json';
 
   const response = await fetch(file);
   const json = await response.json();
