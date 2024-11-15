@@ -55,6 +55,7 @@ button {
   max-width: var(--max-width);
 }
 
+
 /** Lectures **/
 .lectures h2 {
   text-align: center;
@@ -66,6 +67,10 @@ button {
 
 .lecture > * {
   padding: var(--spacing);
+}
+
+.lecture img {
+  max-width: 500px;
 }
 
 .lecture-title {
