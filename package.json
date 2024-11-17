@@ -4,11 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "sass": "sass styles.scss style.css",
+    "sass-watch": "sass --watch styles.scss style.css",
+    "dev": "concurrently \"vite\" \"npm run sass-watch\"",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "stylelint ./**/*.scss"
   },
   "devDependencies": {
-    "vite": "^5.4.10"
+    "vite": "^5.4.10",
+    "sass": "^1.79.5",
+    "stylelint": "^16.9.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "concurrently": "^8.0.1"
   }
 }
+

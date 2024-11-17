@@ -1,0 +1,45 @@
+/** main **/
+main {
+  flex-grow: 1;
+  background-color: var(--color-background-main);
+}
+
+main h2 { 
+  text-align: center;
+  margin-top: calc(2*var(--spacing));
+}
+
+main p {
+  padding: calc(2*var(--spacing));
+}
+  
+main section {
+  padding: calc(2*var(--spacing));
+  padding-bottom: 0;
+}
+
+main section p {
+  padding: 0;
+}
+  
+main section a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+  
+main section h3 {
+  margin-bottom: calc(var(--spacing)*0.5);
+}
+  
+.index-nav {
+  text-align: center;
+  font-size: 1.2em;
+  color: #000;
+}
+  
+.index-nav .navigation-list a {
+  display: inline-block;
+  color: #000;
+  padding: calc(2*var(--spacing));
+}

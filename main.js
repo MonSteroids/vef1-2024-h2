@@ -6,6 +6,7 @@ import { renderLecturesData } from './lib/pages/lectures.js';
 import { el } from './lib/elements.js';
 import { renderIndexPage } from './lib/pages/index-page.js';
 
+
 async function fetchIndex() {
   const file = '/data/index.json';
 
@@ -74,6 +75,7 @@ async function render(root, querystring) {
 }
 
 const root = document.querySelector('#app');
+root.classList.add('wrapper');
 
 render(root, window.location.search);
 
