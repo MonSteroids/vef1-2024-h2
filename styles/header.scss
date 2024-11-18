@@ -1,0 +1,16 @@
+/** Header **/
+header {
+  text-align: center;
+  background-color: var(--color-secondary);
+  padding: var(--spacing);
+}
+  
+header h1 {
+  margin: var(--spacing);
+}
+  
+@media (width <= 400px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+}

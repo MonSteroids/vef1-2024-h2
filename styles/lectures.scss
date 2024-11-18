@@ -1,0 +1,28 @@
+/** Lectures **/
+.lectures h2 {
+  text-align: center;
+}
+  
+.lectures {
+  padding: var(--spacing);
+}
+  
+.lecture > * {
+  padding: var(--spacing);
+}
+  
+.lecture img {
+  max-width: 500px;
+}
+  
+.lecture-title {
+  text-align: center;
+}
+  
+.content-heading {
+  padding-bottom: 0;
+}
+  
+.content-list {
+  list-style: none;
+}

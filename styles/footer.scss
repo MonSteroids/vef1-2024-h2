@@ -1,0 +1,14 @@
+/** Footer **/
+footer {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  background-color: var(--color-secondary);
+  padding: calc(2*var(--spacing));
+}
+  
+@media (width <= 400px) {
+  footer {
+    font-size: 1.5em;
+  }  
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,34 +6,18 @@
 
 html {
   box-sizing: border-box;
+  font-family: var(--font-family);
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
-}
-
-:root {
-  --spacing: 1rem;
-  --max-width: 56rem;
-
-  --font-size-button: 1rem;
-  --font-family: -system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-  --color-light-gray: #f5f5f5;
-  --color-background-zebra: var(--color-light-gray);
 }
 
 .hidden {
   /* Viljum að þetta feli alltaf element, notum því !important */
   display: none !important;
-}
-
-html {
-  font-family: var(--font-family);
-  padding: var(--spacing);
 }
 
 input,
@@ -41,20 +26,85 @@ button {
   font-size: inherit;
 }
 
+/** a **/
+a {
+  transition: color 1s ease;
+}
+
+a:hover {
+  color: var(--color-red);
+}
+
 button {
   padding: 0.25rem 0.5rem;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing);
-
-  margin: var(--spacing) auto;
-  padding-inline: var(--spacing);
-  max-width: var(--max-width);
+:root {
+  --spacing: 1rem;
+  --max-width: 56rem;
+  --font-size-button: 1rem;
+  --font-family: -system-ui, -apple-system, blinkmacaystemfont, "Segoe UI",
+    roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --color-light-gray: #f5f5f5;
+  --color-gray: #6e6e70;
+  --color-light-blue: #b2dffd;
+  --color-lighter-gray: #fafafa;
+  --color-green: #36e713;
+  --color-red: #fa1b1b;
+  --color-background-zebra: var(--color-light-gray);
+  --color-secondary: var(--color-light-blue);
+  --color-background-main: var(--color-lighter-gray);
+  --color-font-gray: var(--color-gray);
 }
 
+/** Footer **/
+footer {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  background-color: var(--color-secondary);
+  padding: calc(2 * var(--spacing));
+}
+
+@media (width <= 400px) {
+  footer {
+    font-size: 1.5em;
+  }
+}
+/** Header **/
+header {
+  text-align: center;
+  background-color: var(--color-secondary);
+  padding: var(--spacing);
+}
+
+header h1 {
+  margin: var(--spacing);
+}
+
+@media (width <= 400px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+}
+/** Keywords **/
+.keywords {
+  padding: var(--spacing);
+}
+
+.keywords h2 {
+  text-align: center;
+  padding: var(--spacing);
+}
+
+.keyword {
+  background-color: var(--color-background-zebra);
+  padding: var(--spacing);
+}
+
+.flashcards-explanation {
+  font-weight: 400;
+}
 
 /** Lectures **/
 .lectures h2 {
@@ -85,25 +135,78 @@ button {
   list-style: none;
 }
 
-/** Keywords **/
-.keywords {
-  padding: var(--spacing);
+/** main **/
+main {
+  flex-grow: 1;
+  background-color: var(--color-background-main);
 }
 
-.keywords h2 {
+main h2 {
   text-align: center;
+  margin-top: calc(2 * var(--spacing));
+}
+
+main p {
+  padding: calc(2 * var(--spacing));
+}
+
+main section {
+  padding: calc(2 * var(--spacing));
+  padding-bottom: 0;
+}
+
+main section p {
+  padding: 0;
+}
+
+main section a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+main section h3 {
+  margin-bottom: calc(var(--spacing) * 0.5);
+}
+
+.index-nav {
+  text-align: center;
+  font-size: 1.2em;
+  color: #000;
+}
+
+.index-nav .navigation-list a {
+  display: inline-block;
+  color: #000;
+  padding: calc(2 * var(--spacing));
+}
+
+/** Navigation **/
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+}
+
+.navigation-list li a {
+  text-decoration: none;
   padding: var(--spacing);
+  display: inline-block;
+  transition: color 0.3s ease;
+  color: var(--color-font-gray);
 }
 
-.keyword {
-  background-color: var(--color-background-zebra);
-  padding: var(--spacing);
+.navigation-list li a:hover {
+  color: #000;
 }
 
-.flashcards-explanation {
-  font-weight: 400;
+@media (width <= 400px) {
+  .navigation-list {
+    font-size: 0.85em;
+  }
 }
-
 /** Questions **/
 .quiz h2 {
   text-align: center;
@@ -117,11 +220,13 @@ button {
 .question-container {
   margin-bottom: 20px;
 }
+
 .question {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 10px;
 }
+
 .answer {
   cursor: pointer;
   padding: 10px;
@@ -130,21 +235,26 @@ button {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
+
 .answer:hover {
   background-color: #f9f9f9;
 }
+
 .correct {
-  color: green;
-  font-weight: bold;
-}
-.incorrect {
-  color: red;
+  color: var(--color-green);
   font-weight: bold;
 }
 
-/** Footer **/
-footer {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 600;
+.incorrect {
+  color: var(--color-red);
+  font-weight: bold;
 }
+
+/** body **/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

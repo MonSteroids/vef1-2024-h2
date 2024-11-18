@@ -1,0 +1,42 @@
+/** Questions **/
+.quiz h2 {
+  text-align: center;
+  margin: var(--spacing);
+}
+  
+.quiz {
+  padding: var(--spacing);
+}
+  
+.question-container {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.answer {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+  
+.answer:hover {
+  background-color: #f9f9f9;
+}
+
+.correct {
+  color: var(--color-green);
+  font-weight: bold;
+}
+
+.incorrect {
+  color: var(--color-red);
+  font-weight: bold;
+}

@@ -1,0 +1,18 @@
+/** Keywords **/
+.keywords {
+  padding: var(--spacing);
+}
+  
+.keywords h2 {
+  text-align: center;
+  padding: var(--spacing);
+}
+  
+.keyword {
+  background-color: var(--color-background-zebra);
+  padding: var(--spacing);
+}
+  
+.flashcards-explanation {
+  font-weight: 400;
+}

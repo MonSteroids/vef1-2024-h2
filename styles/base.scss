@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+    
+.hidden {
+  /* Viljum að þetta feli alltaf element, notum því !important */
+  display: none !important;
+}
+  
+input,
+textarea,
+button {
+  font-size: inherit;
+}
+
+/** a **/
+a {
+  transition: color 1s ease;
+}
+
+a:hover {
+  color: var(--color-red);
+}

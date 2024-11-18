@@ -1,0 +1,26 @@
+/** Navigation **/
+.navigation-list {
+  list-style-type: none;
+}
+  
+.navigation-list li {
+  display: inline-block;
+}
+  
+.navigation-list li a {
+  text-decoration: none;
+  padding: var(--spacing);
+  display: inline-block;
+  transition: color 0.3s ease;
+  color: var(--color-font-gray);
+}
+  
+.navigation-list li a:hover {
+  color: #000;
+}
+  
+@media (width <= 400px) {
+  .navigation-list {
+    font-size: 0.85em;
+  }
+}
