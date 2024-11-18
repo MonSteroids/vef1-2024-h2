@@ -120,7 +120,12 @@ header h1 {
 }
 
 .lecture img {
-  max-width: 500px;
+  max-width: 300px;
+}
+@media (min-width: 700px) {
+  .lecture img {
+    max-width: 500px;
+  }
 }
 
 .lecture-title {
