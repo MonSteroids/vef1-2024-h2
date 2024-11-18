@@ -9,15 +9,19 @@
     "dev": "concurrently \"vite\" \"npm run sass-watch\"",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "stylelint ./**/*.scss"
+    "lint": "npm run lint:css && npm run lint:js",
+    "lint:css": "stylelint ./**/*.scss",
+    "lint:js": "eslint lib/**/*.js"
   },
   "devDependencies": {
-    "vite": "^5.4.10",
+    "@eslint/js": "^9.15.0",
+    "concurrently": "^8.0.1",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
     "sass": "^1.79.5",
     "stylelint": "^16.9.0",
     "stylelint-config-sass-guidelines": "^12.1.0",
     "stylelint-config-standard": "^36.0.1",
-    "concurrently": "^8.0.1"
+    "vite": "^5.4.10"
   }
 }
-

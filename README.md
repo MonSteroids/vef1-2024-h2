@@ -10,7 +10,7 @@ Verkefnið krefst einfalds útlits sem er skalanlegt og virkar í nýjustu
 ## Hvernig skal keyra verkefnið
 
 1. Sækja verkefnið:
- - Smelltu á græna "Code" takkann á GitHub síðunni til að sækja zip skránna eða
+Smelltu á græna "Code" takkann á GitHub síðunni til að sækja zip skránna eða
  notaðu `git clone`.
 
 ```bash
@@ -20,22 +20,34 @@ cd < slóð á möppu >
 ```
 
 2. Setja upp "node modules"
- - Eftir að þú hefur sótt kóðann, keyrðu eftirfarandi skipun til að setja upp "node modules".
-    
+Eftir að þú hefur sótt kóðann, keyrðu eftirfarandi skipun til að setja upp "node modules".
+
 ```bash
 npm install
 ```
 
 3. Keyra verkefni
- - Eftir að "node modules" hafa verið sótt getur þú notað eftirfarandi skipanir til þess
- að keyra forritið.
+Eftir að "node modules" hafa verið sótt getur þú notað eftirfarandi skipanir til þess
+að keyra forritið.
 
+- Til að keyra þróunarumhverfi:
 ```bash
 npm run dev
 ```
-eða
+
+- Til að athuga hvort bæði stylelint og eslint sé með villur:
 ```bash
-npm start
+npm run lint
+```
+
+- Til að athuga hvort stylelint sé með villur:
+```bash
+npm run lint:css
+```
+
+- Til að athuga hvort eslint sé með villur:
+```bash
+npm run lint:js
 ```
 
 ---
@@ -76,6 +88,10 @@ Auk þess eru "Höfuðskrár" í rót verkefnisins:
   - Innihald úr /public/data/css/questions.json
   - Innihald úr /public/data/html/questions.json
   - Innihald úr /public/data/js/questions.json
+
+### 4. Flashcards
+  - Útfært fyrir lykilhugtök.
+  - Virkni þar sem birt er lykilhugtak og notandi getur smellt á til að sjá skilgreiningu.
 
 ---
 
