@@ -61,18 +61,18 @@ Auk þess eru "Höfuðskrár" í rót verkefnisins:
 
 ---
 
-## Útfærð auka verkefni
-1. Birting á námsefni
+## Útfærð aukaverkefni
+### 1. Birting á námsefni
   - Innihald úr /public/data/css/lectures.json
   - Innihald úr /public/data/html/lectures.json
   - Innihald úr /public/data/js/lectures.json
 
-2. Birting á lykilhugtökum
+### 2. Birting á lykilhugtökum
   - Innihald úr /public/data/css/keywords.json
   - Innihald úr /public/data/html/keywords.json
   - Innihald úr /public/data/js/keywords.json
 
-3. Birting á spurningum
+### 3. Birting á spurningum
   - Innihald úr /public/data/css/questions.json
   - Innihald úr /public/data/html/questions.json
   - Innihald úr /public/data/js/questions.json
