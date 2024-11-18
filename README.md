@@ -64,6 +64,7 @@ Verkefninu er skipt niður í eftirfarandi möppur:
 Auk þess eru "Höfuðskrár" í rót verkefnisins:
 - **.gitignore** - Inniheldur þær skrár sem eiga ekki að vera í Git.
 - **.stylelintrc.json** - Stillingar fyrir Stylelint.
+- **.eslint.config.js** - Stillingar fyrir Eslint.
 - **index.html** - Aðalsíða verkefnis.
 - **main.js** - Inniheldur allan JavaScript kóða.
 - **readme.md** - Upplýsingar um verkefnið.
