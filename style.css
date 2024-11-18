@@ -230,6 +230,7 @@ main section h3 {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 10px;
+  white-space: pre-wrap;
 }
 
 .answer {
